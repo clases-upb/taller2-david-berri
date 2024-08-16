@@ -203,11 +203,11 @@ public static float Calcular_para_ganar(float n1, float n2, float n3, float n4, 
 
     try {
         float suma = 0, tot_porcentaje = 0, faltante = 0, porcentaje_max = 0;
-        final float ganar = 3;
+        final float ganar = 3, no = 0;
         tot_porcentaje = 1;
         porcentaje_max = p1 + p2 + p3 + p4 + p5;
 
-        if(porcentaje_max == 1 && p1 > 0 && p1 < tot_porcentaje && p2 > 0 && p2 < tot_porcentaje && p3 > 0 && p3 < tot_porcentaje && p4 > 0 && p4 < tot_porcentaje && p5 > 0 && p5 < tot_porcentaje){
+        if(porcentaje_max == 1 && p1 > no && p1 < tot_porcentaje && p2 > no && p2 < tot_porcentaje && p3 > no && p3 < tot_porcentaje && p4 > no && p4 < tot_porcentaje && p5 > no && p5 < tot_porcentaje){
             suma = (n1 * p1) + (n2* p2) + (n3*p3) + (n4*p4);
             faltante = (ganar - suma)/p5;     
     }
